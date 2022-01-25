@@ -1,5 +1,5 @@
-let canvas = document.getElementById("myCanvas"); // почему не const
-let ctx = canvas.getContext("2d"); // почему не const
+let canvas = document.getElementById("myCanvas");
+let ctx = canvas.getContext("2d");
 
 let x = canvas.width / 2;
 let y = canvas.height - 30;
@@ -83,7 +83,7 @@ function changeColor() {
 
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawBricks(); // почему в туториале говорят "add above the drawBall"?  https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript/Build_the_brick_field#actually_drawing_the_bricks
+    drawBricks(); 
     drawBall();
     drawPaddle();
     drawScore();
@@ -104,7 +104,7 @@ function draw() {
             dy = -dy;
         }
         else {
-            alert("GAME OVER YOU LOSER");
+            alert("GAME OVER");
             document.location.reload();
             clearInterval(interval);
         }
@@ -152,7 +152,7 @@ function collisionDetection() {
                     b.status = 0;
                     score++;
                     if (score == brickRowCount * brickColumnCount) {
-                        alert("YOU WIN, CONGRATULATIONS!");
+                        alert("YOU WIN, CONGRATULATIONS! 👏👏👏");
                         document.location.reload();
                         clearInterval(interval); // Needed for Chrome to end game
                     }
