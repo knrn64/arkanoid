@@ -1,4 +1,4 @@
 # Арканоид
 Просто бешеный арканоид на JS.
 
-Поиграть можно тут: https://konerini.github.io/arkanoid/
+Поиграть можно тут: https://knrn-ai.github.io/arkanoid/
